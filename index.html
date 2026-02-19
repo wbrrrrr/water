@@ -1,57 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>charity: water</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>charity: water</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:Inter, sans-serif;
+  background:#f5f5f5;
+  color:#111;
+}
 
+.container{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 40px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  margin-bottom:40px;
+}
+
+.logo-box{
+  width:14px;
+  height:14px;
+  background:#f6c21a;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+.caption{
+  margin-top:12px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.text{
+  text-align:center;
+}
+
+.text h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.text p{
+  font-size:12px;
+  color:#666;
+  line-height:1.8;
+}
+
+.text h3{
+  margin-top:40px;
+  font-size:26px;
+}
+
+.button-wrap{
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+}
+
+button{
+  background:#f6c21a;
+  border:none;
+  padding:16px 60px;
+  border-radius:50px;
+  font-weight:700;
+  cursor:pointer;
+  color:white;
+}
+
+@media(max-width:1024px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
 <body>
 
-  <header class="topbar">
-    <img src="img/charitywater_logo_horizontal_BlackText.png" 
-         alt="charity water logo" 
-         class="logo">
-  </header>
+<div class="container">
 
-  <main class="page">
+  <div class="logo">
+    <div class="logo-box"></div>
+    <div><strong>charity:</strong> water</div>
+  </div>
 
-    <section class="layout">
+  <div class="grid">
+    <div>
+      <img src="your-image.jpg" alt="">
+      <div class="caption">
+        The children in the image show happy, innocent smiles while interacting with clean water, which conveys a strong sense of hope.
+      </div>
+    </div>
 
-      <figure class="media">
-        <img src="img/water.png" 
-             alt="Children smiling near a clean water tap" 
-             class="media-img">
+    <div class="text">
+      <h2>Our Mission</h2>
+      <p>
+        The mission of charity: water is to help provide people with clean water resources.
+      </p>
 
-        <figcaption class="media-caption">
-          The children in the image show happy, innocent smiles whileinteracting with clean water, which conveys a strong sense of hope.
-        </figcaption>
-      </figure>
+      <h3>Your Donation Has a Story and an Impact</h3>
+      <p>
+        Learn about global water issues through inspiring stories and help transform communities by supporting access to clean and safe water.
+      </p>
+    </div>
+  </div>
 
-      <section class="content">
+  <div class="button-wrap">
+    <button>Donate for Water</button>
+  </div>
 
-        <h2 class="section-title">Our Mission</h2>
-
-        <p class="lead">
-          The mission of charity: water is to help providepeople with clean water resources.
-        </p>
-
-        <h3 class="headline">Your Donation Has a Story and an lmpact</h3>
-
-        <p class="body">
-         Learn about global water issues through inspiring stories.and help transform communities by supporting access toclean and safe water.
-        </p>
-
-      </section>
-
-    </section>
-
-    <section class="cta">
-      <a href="#" class="btn">Donate for Water</a>
-    </section>
-
-  </main>
+</div>
 
 </body>
 </html>
